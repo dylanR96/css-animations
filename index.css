@@ -1,0 +1,260 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: beige;
+}
+
+.main__btn {
+  background-color: black;
+  color: white;
+  width: 8rem;
+  height: 4rem;
+}
+
+.main__btn:hover {
+  background-color: red;
+  box-shadow: 10px 10px;
+  transition: 2s ease-in-out;
+  width: 16rem;
+  height: 8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle {
+  width: 4rem;
+  height: 3rem;
+}
+
+nav {
+  position: relative;
+  left: -500px;
+}
+
+/* .nav-container {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  width: 8rem;
+  height: 100vh;
+} */
+
+.open {
+  display: flex;
+  left: 0px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.open .item-one {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.divider {
+  display: flex;
+}
+
+.card-container {
+  position: absolute;
+  left: 500px;
+  top: 500px;
+  width: 10rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.card-pink {
+  z-index: 9;
+  position: absolute;
+  width: 5rem;
+  height: 8rem;
+  background-color: pink;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.card-container:hover .card-pink {
+  transform: translate(-50px, -30px) rotate(-15deg);
+}
+
+.card-purple {
+  z-index: 8;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+  width: 5rem;
+  height: 8rem;
+  background-color: purple;
+}
+
+.card-container:hover .card-purple {
+  transform: translate(-30px, -30px) rotate(-10deg);
+}
+
+.card-blue {
+  z-index: 7;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+  width: 5rem;
+  height: 8rem;
+  background-color: blue;
+}
+
+.card-container:hover .card-blue {
+  transform: translate(-20px, -30px) rotate(-6deg);
+}
+
+.card-light-blue {
+  z-index: 6;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+  width: 5rem;
+  height: 8rem;
+  background-color: lightblue;
+}
+
+.card-container:hover .card-light-blue {
+  transform: translate(-15px, -30px) rotate(-2deg);
+}
+
+.card-lime {
+  z-index: 5;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+  width: 5rem;
+  height: 8rem;
+  background-color: darkgreen;
+}
+
+.card-container:hover .card-lime {
+  transform: translate(+10px, -30px) rotate(+4deg);
+}
+
+.card-green {
+  z-index: 4;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+  width: 5rem;
+  height: 8rem;
+  background-color: green;
+}
+
+.card-container:hover .card-green {
+  transform: translate(+25px, -30px) rotate(+10deg);
+}
+
+.card-yellow {
+  z-index: 3;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+  width: 5rem;
+  height: 8rem;
+  background-color: yellow;
+}
+
+.card-container:hover .card-yellow {
+  transform: translate(+30px, -30px) rotate(+13deg);
+}
+
+.card-orange {
+  z-index: 2;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+  width: 5rem;
+  height: 8rem;
+  background-color: orange;
+}
+
+.card-container:hover .card-orange {
+  transform: translate(+40px, -30px) rotate(+17deg);
+}
+
+.card-red {
+  z-index: 1;
+  position: absolute;
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+  width: 5rem;
+  height: 8rem;
+  background-color: red;
+}
+
+.card-container:hover .card-red {
+  transform: translate(+50px, -30px) rotate(+20deg);
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+
+/* @keyframes dropping-by {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 10px;
+  }
+} */
+
+/* .item-one {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.item-two {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.item-three {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+.item-four {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+}
+.item-five {
+  position: relative;
+  animation-name: dropping-by;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+} */

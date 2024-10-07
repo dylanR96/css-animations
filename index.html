@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="divider">
+      <div class="nav-container">
+        <nav class="open">
+          <a class="item-one">One</a>
+          <a class="item-two">Two</a>
+          <a class="item-three">Three</a>
+          <a class="item-four">Four</a>
+          <a class="item-five">Five</a>
+        </nav>
+      </div>
+      <button class="toggle">Display menu</button>
+    </div>
+    <div class="card-container">
+      <div class="card-pink"></div>
+      <div class="card-purple"></div>
+      <div class="card-blue"></div>
+      <div class="card-light-blue"></div>
+      <div class="card-lime"></div>
+      <div class="card-green"></div>
+      <div class="card-yellow"></div>
+      <div class="card-orange"></div>
+      <div class="card-red"></div>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".toggle").addEventListener("click", (e) => {
+      document.querySelector("nav").classList.toggle("open");
+    });
+  </script>
+</html>
