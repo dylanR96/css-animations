@@ -47,3 +47,56 @@ body {
     39% 35%
   );
 }
+
+.movingBox {
+  width: 3rem;
+  height: 3rem;
+  background-color: blueviolet;
+}
+
+.cirlce-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.circle-one {
+  width: 3rem;
+  height: 3rem;
+  background-color: beige;
+  border-radius: 50px;
+}
+
+.circle-two {
+  width: 3rem;
+  height: 3rem;
+  background-color: beige;
+  border-radius: 50px;
+}
+
+.circle-three {
+  width: 3rem;
+  height: 3rem;
+  background-color: beige;
+  border-radius: 50px;
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.users-input {
+  width: 12rem;
+}
